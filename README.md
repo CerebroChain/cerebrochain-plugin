@@ -1,5 +1,7 @@
 # CerebroChain
 
+![CerebroChain](assets/cerebrochain-logo.png)
+
 Run your warehouse from a conversation with Claude. This plugin pairs the CerebroChain connector
 with five skills that carry everyday warehouse jobs to the point where you review and approve.
 

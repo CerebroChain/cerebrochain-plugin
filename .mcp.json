@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "cerebrochain": {
+      "type": "http",
+      "url": "https://cerebrochain.com/mcp"
+    }
+  }
+}

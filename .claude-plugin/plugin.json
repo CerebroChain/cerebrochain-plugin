@@ -1,0 +1,11 @@
+{
+  "name": "cerebrochain",
+  "displayName": "CerebroChain",
+  "version": "1.0.0",
+  "description": "Run a warehouse from a conversation: set up items and stock from a spreadsheet, ship orders with live UPS, USPS and FedEx rates, get the daily floor report, and review what to reorder.",
+  "author": { "name": "CerebroChain LLC", "url": "https://cerebrochain.com" },
+  "homepage": "https://cerebrochain.com/connect",
+  "privacyPolicyUrl": "https://cerebrochain.com/privacy",
+  "license": "MIT",
+  "keywords": ["warehouse", "inventory", "orders", "shipping", "logistics"]
+}

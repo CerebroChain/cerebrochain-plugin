@@ -25,7 +25,7 @@ If the user has no answer, use 7 days and 95%, and say in the report that both a
 2. `forecast_demand` for the 25 items with the most demand, or for one SKU when the user asked about
    one. It gives average daily demand, days of cover and the projected stockout date.
 
-Calls are paid from the account's prepaid credits, and each tool states its price. Tell the user what the review costs, added up from those prices, before making the calls. When the user only asks whether one item is running low, `query_inventory` for that SKU answers it for the price of a read.
+Calls are paid from the account's prepaid credits, and each tool states its price. Before the paid calls, call `get_account_status`, which is free and reports the credit balance. Tell the user what the review costs, added up from those prices, before making the calls. When the balance is below that cost, say so and offer the top-up before making a paid call. When the user only asks whether one item is running low, `query_inventory` for that SKU answers it for the price of a read.
 
 ## 3. Write the buy list
 

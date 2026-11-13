@@ -13,6 +13,10 @@ with one click; nothing in this skill spends their money.
 Call `get_order` with the order ID. If the user gave a customer name or a partial ID, call
 `list_orders` with it as the search and confirm which order they mean.
 
+Check the order's status before anything else. An order at CANCELLED, SHIPPED, DELIVERED or RETURNED
+is not shipped again: tell the user its status, quote no rates, prepare no label, and ask which
+order they meant.
+
 Read the ship-to address from the order. A label needs the full address: name, street, city, state
 and ZIP. An order can be saved without a ship-to address; when the address or any part of it is
 missing, ask the user for it.

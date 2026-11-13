@@ -21,7 +21,7 @@ Make these calls:
 4. `get_order_statistics`: order totals by status and by day.
 5. `get_kpi_status`: the account's KPIs over the last 30 days, each with its trend.
 
-Calls are paid from the account's prepaid credits, and each tool states its price. The first time the user asks for this report, tell them what one run costs, added up from those prices, before making the calls.
+Calls are paid from the account's prepaid credits, and each tool states its price. Before the paid calls, call `get_account_status`, which is free and reports the credit balance, and add up what one run costs from those prices. The first time the user asks for this report, tell them that cost before making the calls. When the balance is below the cost of a run, say which sections it cannot pay for and ask whether to top up first or to run the sections it covers. Do not spend credits on a report whose main sections will come back refused.
 
 ## 2. Write the report
 
